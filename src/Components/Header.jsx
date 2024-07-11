@@ -21,13 +21,13 @@ const Header = () => {
       <div onClick={handleNav} className='block md:hidden'>
           {nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
       </div>
-      <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#1b1746] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
+     <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#1b1746] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
       <h1 className='w-full text-3xl font-bold text-[#ffffff]'>UP<span className='w-full text-3xl font-bold text-[#c72323]'>SKILL</span></h1>
           <li className='p-4 border-b border-gray-600'>Home</li>
-          <li className='p-4 border-b border-gray-600'>Company</li>
-          <li className='p-4 border-b border-gray-600'>Resources</li>
-          <li className='p-4 border-b border-gray-600'>About</li>
-          <li className='p-4'>Contact</li>
+          <li className='p-4 border-b border-gray-600'><a href="#about">About</a></li>
+          <li className='p-4 border-b border-gray-600'><a href="#mentor">Mentors</a></li>
+          <li className='p-4 border-b border-gray-600'><a href="#contact">Contact</a></li>
+          
       </ul>
     </div>
   );
